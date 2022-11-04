@@ -1,1 +1,1 @@
-# learning git in vscode
+# Deploy storage resources with ARM template and powershell
