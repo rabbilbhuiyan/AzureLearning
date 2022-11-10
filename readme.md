@@ -1,12 +1,1 @@
-# Deploy storage resources with ARM template and powershell
-- First create the local project directory
-- open the project in VS code
-- check if git is installed
-- update git configuration with name and email 
-- create own local git repo or clone existing git repo for version controlling
-- in vs code create a json file
-- install Azure resource manager tools extension in vs code
-- wirte the code using extension
-- then connect your azure account in the terminal
-- then run the json file from terminal for deploying the resources
-- go the the azure portal and check the deploymen is done 
+
