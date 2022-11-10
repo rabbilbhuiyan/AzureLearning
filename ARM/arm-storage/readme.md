@@ -1,10 +1,11 @@
-# Project set up (documenation link : https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI)
+# Project set up: 
+[Documentation link](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI)
 - open the project folder in VS code and add the required extensions: Azure Resource Manager (ARM) Tools for Visual Studio Code - for the intellegence and deployment of template
 - also enable ARM Template Viewer extension
 # Building template: We will deploy a storage account using ARM template
 - First we created a bank template using arm! (with the help of extension)
 - Then we created a storage file : 01-storage.json 
-  - we expanded the resource section: to create storage resoruces (arm-storage!), added the necessary parameters (documentation link: https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/ or azure quickstart template github: https://github.com/Azure/azure-quickstart-templates)
+  - we expanded the resource section: to create storage resoruces (arm-storage!), added the necessary parameters [azure template documentation link](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/) or [azure quickstart template github](https://github.com/Azure/azure-quickstart-templates)
 # Deploying the template using PowerShell (pwsh)
 - We used the powershell to connect azure account: Connect-AzAccount
 - We can directly deploy from the terminal, however we have created a script for deployment named as 01-storage.ps1
