@@ -24,4 +24,4 @@
 - Similarly, we parameterized storageSKU and location
 - We run all the scripts for each parameterization and validated the deployment by going back to the azure portal
 # Deletion of resources
-- Finally we run the script file to delete the resources created
+- Finally we run the script file to delete the resources created. This project was inspired by the youtube tuotorial of Adam Marczak !
