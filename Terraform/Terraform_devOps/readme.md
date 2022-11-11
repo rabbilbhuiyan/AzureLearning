@@ -54,13 +54,13 @@
     - add it
     - then add 3 instance of terraform by using + of Agent job
     - Go to 1st instance and rename it to Terraform:init
-      - give the path of drop folder in configuration directory (by clicking ... dot)
+      - give the path of drop folder in configuration directory (by clicking ... dot) ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(591).png)
       - if you don't find any available azure service connection then have to create the service principal (to get conncection with terrafrom and azure devops)
       - then select resource group, storage account, container- if you don't have those earlier then have to create 
       - for 'key' you can get the variable name from the i sign (terrraform.tfstate)-tfstate is the name of container
-  - go to the next task: rename it as Terraform: plan, select command:plan, chose the drop folder for configuration directory, chose azure service connections
+  - go to the next task: rename it as Terraform: plan, select command:plan, choose the drop folder for configuration directory, choose azure service connections
   - go to next stage: rename it terraform:apply, same process above, only put additioanl command arguments: -auto-approve
-  - save 
+  - save ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(593).png)
   - Now ready to test: click create release
   - check the release ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(595).png)
   - the queue is started
