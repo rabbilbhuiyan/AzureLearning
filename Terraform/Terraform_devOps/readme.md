@@ -64,7 +64,7 @@
   - Now ready to test: click create release
   - check the release
   - the queue is started
-  - veiw the Agent job and see everything is succeeded
+  - veiw the Agent job and see everything is succeeded ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(600).png)
 # Test on Azure portal
   - Go to the azure portal and see that the storage account is created
   - Go to resource group and see store-rg is created and under that rabbilstorageaccount is created
