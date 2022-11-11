@@ -10,23 +10,23 @@
 - Test the implementation on Azure portal
 
 # Create Terraform configuration file
-- create a local directory and open it with VS code
+- create the local directory and open it with VS code
 - create a main.tf file 
 - Before sending the config file to pipeline, let's test first in terminal:
   - terraform init
   - dir (to see what is created)
   - terraform plan (to study the complete configuration file- to see what is to be created, modified and destroyed)
   - We see the plan: 2 to add, 0 to change, 0 to destroy (now we are ready to implement)
+# Create Azure DevOps project
 - For actual implementation now log in to azure
   - az login
   - Now to go to devOps portal
     - create a new project (e.g terraform-storage)
-# Push the configuation file to remote Devops project
-    - from repos push the code from local folder to remote 
-# Create pipeline
+# Push the configuation file to Devops project
+- from repos push the code from local folder to remote 
+# Create Build pipeline
 - create new pipeline
-- use the classic editor
-- Azure Repos Git
+- use the classic editor and select Azure Repos Git
 - Select template (go to empty job)
 - Go to Agent job 1 and change to agent pool and agent specification
 - save
@@ -46,7 +46,7 @@
   - go with empty job and save it
   - add the artifact (to add the drop folder during the build process)
   - Then enable the trigger
-  - Then go to stages (ther is 1 job and 0 task)
+  - Then go to stages (there is 1 job and 0 task)
   - go to the Agent job and no change required there
   - save 
   - click on + of Agent job 
@@ -55,9 +55,9 @@
     - then add 3 instance of terraform by using + of Agent job
     - Go to 1st instance and rename it to Terraform:init
       - give the path of drop folder in configuration directory (by clicking ... dot)
-  - if you donot find any available azure service connection then have tocreate the service principal (to get conncection with terrafrom and azure devops)
-    - then select resource group, storage account, container- if you don't have those earlier then have to create 
-    - for 'key' you can get the variable name from the i sign (terrraform.tfstate)-tfstate is the name of container
+      - if you don't find any available azure service connection then have to create the service principal (to get conncection with terrafrom and azure devops)
+      - then select resource group, storage account, container- if you don't have those earlier then have to create 
+      - for 'key' you can get the variable name from the i sign (terrraform.tfstate)-tfstate is the name of container
   - go to the next task: rename it as Terraform: plan, select command:plan, chose the drop folder for configuration directory, chose azure service connections
   - go to next stage: rename it terraform:apply, same process above, only put additioanl command arguments: -auto-approve
   - save 
@@ -65,4 +65,7 @@
   - check the release
   - the queue is started
   - veiw the Agent job and see everything is succeeded
-  - Go to the azure portala and see that the storage account is created- go to resource group and see store-rg is created and under that rabbilstorageaccount is created
+# Test on Azure portal
+  - Go to the azure portal and see that the storage account is created
+  - Go to resource group and see store-rg is created and under that rabbilstorageaccount is created
+  - This hands-on project was inspired by youtube tutorial of [InGeniusYT](https://www.youtube.com/watch?v=Ek6WrBPJd_4&ab_channel=InGeniusYT)
