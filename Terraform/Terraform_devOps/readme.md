@@ -62,7 +62,7 @@
   - go to next stage: rename it terraform:apply, same process above, only put additioanl command arguments: -auto-approve
   - save 
   - Now ready to test: click create release
-  - check the release
+  - check the release ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(595).png)
   - the queue is started
   - veiw the Agent job and see everything is succeeded ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(600).png)
 # Test on Azure portal
