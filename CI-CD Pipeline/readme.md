@@ -69,7 +69,8 @@
 - let's open the web app (web site) from azure portal: we see the changes in the website
 
 # CI/CD pipelines succeeded:
-- We did the change in source code and the changes are then automatically deployed to Azure, without any manual interventions: we successfully applied CI/CD pipeline  
+- We did the change in source code and the changes are then automatically deployed to Azure, without any manual interventions: we successfully applied CI/CD pipeline 
+- This hands on was inspried by the youtube tutorial by [Techies Lounge](https://www.youtube.com/watch?v=Ny5vJRfQito&ab_channel=TechiesLounge)
 
 
 
