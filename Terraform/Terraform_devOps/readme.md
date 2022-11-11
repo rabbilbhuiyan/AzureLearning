@@ -28,17 +28,17 @@
 - create new pipeline
 - use the classic editor and select Azure Repos Git
 - Select template (go to empty job)
-- Go to Agent job 1 and change to agent pool and agent specification
+- Go to Agent job 1 and change to agent pool and agent specification ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(572).png)
 - save
 - Create build configuration file
-  - click + of agent job 1 and search for copy files and add it
-  - similarly search for Publish build artifacts and add it
+  - click + of agent job 1 and search for copy files and add it ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(576).png)
+  - similarly search for Publish build artifacts and add it ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(577).png)
   - click on copy files and fill the specifications
     - In target folder: copy and paste the Path to publsih from publish artifact agent job
     - Source folder: leave empty- by default it will take the files e.g main.tf
     - save and queue
-    - You see copy and publish taks is successfull
-    - You can see one artifactis ready, click and see drop folder and inside that all the files
+    - You see copy and publish taks is successfull ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(579).png)
+    - You can see one artifactis ready, click and see drop folder and inside that all the files ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(580).png)
     - Build is successfull
 
   # Create release pipeline
@@ -46,13 +46,13 @@
   - go with empty job and save it
   - add the artifact (to add the drop folder during the build process)
   - Then enable the trigger
-  - Then go to stages (there is 1 job and 0 task)
+  - Then go to stages (there is 1 job and 0 task) ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(587).png)
   - go to the Agent job and no change required there
   - save 
   - click on + of Agent job 
     - search for terraform tool installer, if there is none then install terraform under your devops organization, then can see to add terraform tool installer
     - add it
-    - then add 3 instance of terraform by using + of Agent job
+    - then add 3 instance of terraform by using + of Agent job ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(590).png)
     - Go to 1st instance and rename it to Terraform:init
       - give the path of drop folder in configuration directory (by clicking ... dot) ![](https://github.com/rabbilbhuiyan/AzureLearning/blob/master/Terraform/Terraform_devOps/hands-on-images/Screenshot%20(591).png)
       - if you don't find any available azure service connection then have to create the service principal (to get conncection with terrafrom and azure devops)
