@@ -15,17 +15,17 @@
 # Create build pipeline in Azure DevOps
 - go to devOps portal
 - create your organization and project
-- Then push your local code in Azure repos : As we already created the source code, so go to the Push an existing repository form command line
+- Then push your local code in Azure repos : As we already created the source code, so go to the Push an existing repository from command line
 - Make sure you are inside the project folder e.g my-app
 - Then copy and paste there
-- This will consequently push all the local source codes to remote azure repos
+- This will consequently push all the local source codes to remote azure repos ![](./images/Screenshot%20(552).png)
 - go to Azure pipeline and create pipeline : 
   - select classic editor
   - Azure Repos Git
-  - Empty job (as we don't have any built-in template for react js )
+  - Empty job (as we don't have any built-in template for react js )![](./images/Screenshot%20(553).png)
     - select windows for the agent
 - Agent job 1:
-  - search for npm and add npm task for build pipeline
+  - search for npm and add npm task for build pipeline ![](./images/Screenshot%20(556).png)
   - add one more npm node :
     -display name it as 'npm build'
     - Command: custom
@@ -35,8 +35,8 @@
   - Save and queue (build and run) so that we can see the artifact
   - We see that everyting is executed nicely (no error)- our build is done
   - After building is done we can see one artificat (published)
-    - click and see the drop folder where all the react files are downloaded or stored
-  - Activate the trigger: go to edit pipeline and enable the trigger option and save only (no run at this time)
+    - click and see the drop folder where all the react files are downloaded or stored ![](./images/Screenshot%20(555).png)
+  - Activate the trigger: go to edit pipeline and enable the trigger option and save only (no run at this time) ![](./images/Screenshot%20(559).png)
 # Create azure web app service in Azure
 - Before going to Release pipeline we have to set up our azure web app service- where we will deploy our React js application
 - login to azure and create a new azure app service
@@ -66,7 +66,7 @@
 - We see that the build is already triggered as we have made the chnages in azure repo
 - Once the build process is completed, immediately the realase pipeline will be triggered
 - go to release pipeline and as expected we see that it is trigggered
-- let's open the web app (web site) from azure portal: we see the changes in the website
+- let's open the web app (web site) from azure portal: we see the changes in the website. ![](./images/Screenshot%20(567).png)
 
 # CI/CD pipelines succeeded:
 - We did the change in source code and the changes are then automatically deployed to Azure, without any manual interventions: we successfully applied CI/CD pipeline 
