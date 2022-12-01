@@ -46,8 +46,8 @@
 
 # Create Release pipeline in Azure DevOps
 - create new release pipeline
-- Go to stages and select Empty job
-  - Stage name: Dev <img src=./images/Screenshot%20(561).png width=400/>
+- Go to stages and select Empty job <img src=./images/Screenshot%20(561).png/>
+  - Stage name: Dev 
 - Go to Artifacts: Build, select build pipeline name (build during the building phase)
 - Add
 - Enable the automatic trigger option
