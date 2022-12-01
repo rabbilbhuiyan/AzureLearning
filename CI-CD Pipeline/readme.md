@@ -10,7 +10,7 @@
 - Open the terminal(cmd) and navigate to the directory folder
 - npx create-react-app projectName
 - npm start
-- This will open the browser on localhost port:3000 (press ctlr+C to stop the terminal)
+- This will open the browser on localhost port:3000 (press ctlr+C to stop the terminal) ![](./images/Screenshot%20(569).png)
 
 # Create build pipeline in Azure DevOps
 - go to devOps portal
