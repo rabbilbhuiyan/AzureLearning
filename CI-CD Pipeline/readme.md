@@ -47,7 +47,7 @@
 # Create Release pipeline in Azure DevOps
 - create new release pipeline
 - Go to stages and select Empty job
-  - Stage name: Dev
+  - Stage name: Dev <img src=./images/Screenshot%20(561).png width=200/>
 - Go to Artifacts: Build, select build pipeline name (build during the building phase)
 - Add
 - Enable the automatic trigger option
@@ -66,9 +66,9 @@
 - We see that the build is already triggered as we have made the chnages in azure repo
 - Once the build process is completed, immediately the realase pipeline will be triggered
 - go to release pipeline and as expected we see that it is trigggered
-- let's open the web app (web site) from azure portal: we see the changes in the website. ![](./images/Screenshot%20(567).png)
+- let's open the web app (web site) from azure portal: we see the changes in the website. ![](./images/Screenshot%20(567).png){ width=20% }
 
-# CI/CD pipelines succeeded:
+# CI/CD  pipelines succeeded:
 - We did the change in source code and the changes are then automatically deployed to Azure, without any manual interventions: we successfully applied CI/CD pipeline 
 - This hands on was inspried by the youtube tutorial by [Techies Lounge](https://www.youtube.com/watch?v=Ny5vJRfQito&ab_channel=TechiesLounge)
 
