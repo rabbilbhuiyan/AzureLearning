@@ -16,7 +16,7 @@
 - go to devOps portal
 - create your organization and project
 - Then push your local code in Azure repos : As we already created the source code, so go to the Push an existing repository from command line
-- Make sure you are inside the project folder e.g my-app
+- Make sure you are inside the project folder e.g reactApp
 - Then copy and paste there
 - This will consequently push all the local source codes to remote azure repos ![](./images/Screenshot%20(552).png)
 - go to Azure pipeline and create pipeline : 
