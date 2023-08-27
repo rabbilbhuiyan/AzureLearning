@@ -1,4 +1,4 @@
-# How to deploy react app service into azure app service using Azure devOps
+# How to deploy react app into azure app service using Azure devOps
 # Steps:
 1. Development Environment: Create React application in the local system
 2. Push your code in azure repos (DevOps Service)
